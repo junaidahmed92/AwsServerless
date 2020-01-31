@@ -17,7 +17,7 @@ deploy_service_job: &DEPLOY_SERVICE_JOB
 
   script:
     - cd ${SERVICE_PATH}
-    - serverless deploy -s ${STAGE_NAME}
+    - serverless deploy -v
     - cd -
 
 environments:
